@@ -1,0 +1,172 @@
+body{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-family: 'Encode Sans', sans-serif;
+}
+hr{
+    border-color: grey;
+    opacity: 0.3;
+    border-style: solid;
+    border-width: thin;
+    margin: 0 15%;
+    margin-bottom: 60px;
+    margin-top: 50px;
+    border-style: outset;
+}
+li{
+    list-style: none;
+    padding: 20px 20px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(4, 1, 8);
+}
+a:hover{
+    color: rgb(231, 105, 105);
+}
+.background{
+    background-image: url("/img/bakugo.jpg"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width:100%;
+    height: 100vh;
+
+}
+.overlay{
+    background-color: red;
+    opacity: 0.3;
+    position:absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+}
+.container{
+    position: relative;
+    z-index: 6;
+}
+.navbar{
+    background-color: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.navlist{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.heading1{
+    font-size: 60px;
+    color:rgb(255, 255, 255);
+    font-family: 'Alegreya', serif;
+    font-weight: 100;
+}
+.subheading{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-family: 'Dosis', sans-serif;
+    font-weight: 100;
+}
+/*
+@media (max-width:800px){
+    .navbar{
+        flex-direction: column;
+    }
+    .navlist{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin : 0 auto;
+    }
+    li{
+        padding: 10px 0 10px 0;
+        text-align: center;
+    }
+    img{
+        max-width:20%;
+    }
+*/
+@media only screen and (orientation: portrait) and (max-width: 767px){
+
+    .background{
+        background-attachment: fixed;
+        background-position-x: 40%;
+    }
+}
+
+/* ---------------- page 2 about -------------------------- */
+.pfp{
+    border-radius: 100%;
+    border: 9px solid beige;
+    width: 18%;
+}
+
+@media (max-width: 100px) {
+    .pfp{
+        width: 100px;
+    } 
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.profile h1{
+    color: #B61919;
+    font-size: 60px;
+    margin-top: 60px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.profile h2{
+    color: black;
+    font-size: 23px;
+    padding-top: 0px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.row2 h1{
+   color: #FF6B6B;
+   font-size: 35px;
+   font-weight: 100;
+}
+.row2 p{
+    color: black;
+   font-size: 1.5em;
+   font-weight: 500;
+}
+
+/* --------------- page 3 ---------------- */
+.background3{
+    background-color: bisque;
+    
+}
+.c1{
+    display: inline;
+}
+.r1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    flex-shrink: 10px;
+    
+}
+.r2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+}
+.cp{
+    width:10%;
+}
+.skill-icon{
+    width:10%;
+}
